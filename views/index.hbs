@@ -1,0 +1,36 @@
+<h1 class="title center">Eat-Da-Burger!</h1>
+
+<div class="row">
+    <section class="col-6 center">
+        <ul class="burger_list">
+            {{#each burgers}}
+            {{#unless this.finished }}
+            <li>{{this.name}}<form class="devour" method="POST" action="/{{this.id}}"><input type="submit" value="Devour It!"></form>
+            </li>
+            {{/unless }}
+            {{/each}}
+        </ul>
+    </section>
+
+    <section class="col-6 center">
+        <ul class="burger_list">
+            {{#each burgers}}
+            {{#if this.finished }}
+            <li>{{this.name}}</li>
+            {{/if }}
+            {{/each}}
+        </ul>
+    </section>
+
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form action="/" class="center" method="POST">
+            <input class="new_name" type="text" name="name" placeholder="What do you want to eat?">
+            <input class="new_submit" type="submit" class value="Submit">
+        </form>
+
+        <p class="center">Enter a burger you want to eat and Click the "Submit" button.</p>
+    </div>
+</div>

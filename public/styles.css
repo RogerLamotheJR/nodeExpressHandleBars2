@@ -1,0 +1,154 @@
+* {
+  font-family: "Lato", Helvetica, sans-serif;
+  color: white;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #303f9f;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-6,
+.col-12 {
+  width: 96%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 33.75em) {
+  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+
+.logo {
+  margin-top: 50px;
+  max-width: 200px;
+  display: block;
+}
+
+.title {
+  display: block;
+}
+
+.devour {
+  display: inline;
+}
+
+.devour > input[type="submit"] {
+  margin: 0 5px;
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 8px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.devour > input[type="submit"]:hover {
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  font-size: 1.3rem;
+}
+li {
+  margin-top: 5px;
+}
+.new_name {
+  width: 45%;
+  margin: 0 auto;
+  display: block;
+  height: 40px;
+  padding: 2px 5px;
+  color: black;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.new_submit {
+  font-size: 1.3rem;
+  margin: 10px;
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  transition: all 0.3s ease 0s;
+}
+
+.new_submit:hover {
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
